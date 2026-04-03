@@ -16,6 +16,13 @@
 		'sm:-rotate-6 sm:group-hover/appsrow:rotate-0 sm:group-hover/appsrow:translate-x-4 sm:-translate-x-4'
 	];
 
+	const websiteRotations = [
+		'sm:-rotate-6 sm:group-hover/websitesrow:rotate-0 sm:group-hover/websitesrow:translate-x-0 sm:translate-x-2',
+		'sm:rotate-3 sm:group-hover/websitesrow:rotate-0 sm:group-hover/websitesrow:translate-x-2',
+		'sm:-rotate-6 sm:group-hover/websitesrow:rotate-0 sm:group-hover/websitesrow:translate-x-4 sm:-translate-x-4',
+		'sm:rotate-6 sm:group-hover/websitesrow:rotate-0 sm:group-hover/websitesrow:translate-x-6 sm:-translate-x-6'
+	];
+
 	const socialRotations = [
 		'sm:-rotate-6 sm:group-hover/socialrow:rotate-0 sm:group-hover/socialrow:translate-x-0 sm:translate-x-2',
 		'sm:rotate-3 sm:group-hover/socialrow:rotate-0 sm:group-hover/socialrow:translate-x-2',
@@ -64,6 +71,25 @@
 					{/each}
 				</span>
 			</span>
+
+			{#if site.websites.length > 0}
+				<span
+					class="group/websitesrow relative mt-8 inline-flex flex-col items-start gap-2 sm:flex-row sm:items-center"
+				>
+					<span>{site.websitesLead}</span>
+					<span class="relative inline-flex flex-wrap items-center gap-2 sm:gap-0">
+						{#each site.websites as w, i (w.id)}
+							<IconWithTooltip
+								href={w.href}
+								src={w.iconUrl}
+								alt={w.alt}
+								tooltip={w.tooltip}
+								imgClass={websiteRotations[i % websiteRotations.length] ?? ''}
+							/>
+						{/each}
+					</span>
+				</span>
+			{/if}
 
 			<span class="mt-8 inline-flex flex-col items-start gap-2 sm:flex-row sm:items-center">
 				<span>

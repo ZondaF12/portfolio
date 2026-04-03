@@ -11,6 +11,7 @@ import reactIcon from '$lib/assets/react.png';
 import nestjsIcon from '$lib/assets/nestjs.png';
 import mongodbIcon from '$lib/assets/mongodb.png';
 import svelteIcon from '$lib/assets/svelte.webp';
+import sanityIcon from '$lib/assets/sanity.png';
 
 export type AppShowcase = {
 	id: 'app1' | 'app2' | 'app3';
@@ -19,12 +20,19 @@ export type AppShowcase = {
 	alt: string;
 };
 
+export type WebsiteShowcase = {
+	id: string;
+	href: string;
+	tooltip: string;
+	alt: string;
+	iconUrl: string;
+};
+
 export type SocialImageLink = {
 	id: string;
 	href: string;
 	tooltip: string;
 	alt: string;
-	/** Remote URL or path; local assets are wired in +page imports if you prefer */
 	iconUrl: string;
 };
 
@@ -86,14 +94,16 @@ export const site = {
 			alt: 'My Pocket Garage'
 		}
 	] satisfies AppShowcase[],
-	youtube: {
-		href: 'https://www.youtube.com/',
-		tooltip: '@yourhandle',
-		alt: 'YouTube',
-		/** Square logo; replace with your channel art if you like */
-		iconUrl: 'https://cdn.simpleicons.org/youtube/FF0000'
-	},
-	youtubeLead: 'and make youtube videos about building',
+	websitesLead: 'But I also build websites',
+	websites: [
+		{
+			id: 'website1',
+			href: 'https://deborahbellinteriors.com',
+			tooltip: 'Deborah Bell Interiors — A interior design website',
+			alt: 'Deborah Bell Interiors',
+			iconUrl: vercelIcon
+		}
+	] satisfies WebsiteShowcase[],
 	studio: {
 		badge: {
 			href: 'https://www.usertesting.com/sites/default/files/usertestingv3/styles/medium/public/2023-07/Resource%20placeholder%20image.jpg.webp?itok=Vu6yhtaF',
@@ -219,6 +229,21 @@ export const site = {
 					href: 'https://posthog.com',
 					details: [{ type: 'text', text: 'The analytics tool I use.' }],
 					iconUrl: posthogIcon
+				},
+				{
+					name: 'Sanity',
+					href: 'https://sanity.io',
+					details: [
+						{ type: 'text', text: 'The content management system I use' },
+						{
+							type: 'link',
+							before: 'See it in action on this website ',
+							linkText: 'here',
+							href: 'https://deborahbellinteriors.com',
+							after: ''
+						}
+					],
+					iconUrl: sanityIcon
 				},
 				{
 					name: 'Swift',
