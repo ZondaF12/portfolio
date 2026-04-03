@@ -41,7 +41,9 @@
 	<meta name="twitter:description" content={site.seo.description} />
 </svelte:head>
 
-<div class="ruaridh-home mt-0 flex w-full flex-col items-center bg-white p-8 pt-10 sm:mt-20">
+<div
+	class="ruaridh-home mt-0 flex w-full flex-col items-center bg-white p-8 pt-10 sm:min-h-dvh sm:justify-center sm:pt-8"
+>
 	<div class="flex max-w-2xl flex-col items-start gap-6">
 		<div class="flex flex-col gap-4 text-2xl font-light text-gray-800">
 			<span class="mb-10 flex flex-col items-start gap-2 sm:flex-row sm:items-center">
