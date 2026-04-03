@@ -1,2 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--font-sans:
+		'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol', 'Noto Color Emoji';
+
+	--color-ink: #171717;
+	--color-canvas: #fafafa;
+}
+
+@layer base {
+	html {
+		@apply scroll-smooth bg-white;
+	}
+
+	body {
+		@apply m-0 bg-white font-sans text-ink antialiased;
+	}
+
+	a {
+		@apply text-ink underline decoration-neutral-400 underline-offset-[0.15em] transition-colors;
+	}
+
+	a:hover {
+		@apply decoration-ink;
+	}
+
+	a:focus-visible {
+		@apply rounded-sm outline-2 outline-offset-2 outline-neutral-800;
+	}
+}
+
+@layer components {
+	.ruaridh-home a.link-brand {
+		@apply font-light text-blue-600 no-underline transition-colors hover:text-purple-600;
+	}
+
+	.ruaridh-home a.link-brand:focus-visible {
+		@apply rounded-sm outline-2 outline-offset-2 outline-blue-600;
+	}
+
+	.ruaridh-tools a.text-back {
+		@apply font-light text-gray-600 no-underline transition-colors hover:text-gray-800;
+	}
+}
