@@ -10,6 +10,7 @@ import swiftIcon from '$lib/assets/swift.jpg';
 import reactIcon from '$lib/assets/react.png';
 import nestjsIcon from '$lib/assets/nestjs.png';
 import mongodbIcon from '$lib/assets/mongodb.png';
+import svelteIcon from '$lib/assets/svelte.webp';
 
 export type AppShowcase = {
 	id: 'app1' | 'app2' | 'app3';
@@ -228,8 +229,23 @@ export const site = {
 				{
 					name: 'React',
 					href: 'https://react.dev',
-					details: [{ type: 'text', text: 'The framework I use for web development' }],
+					details: [
+						{ type: 'text', text: 'The framework I use for web development' },
+						{
+							type: 'text',
+							text: 'The framework I also use for mobile development with react native'
+						}
+					],
 					iconUrl: reactIcon
+				},
+				{
+					name: 'Svelte',
+					href: 'https://svelte.dev',
+					details: [
+						{ type: 'text', text: 'Another framework I use for web development' },
+						{ type: 'text', text: 'The framework I also used for this website' }
+					],
+					iconUrl: svelteIcon
 				}
 			]
 		}
