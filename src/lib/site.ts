@@ -64,7 +64,7 @@ export const site = {
 		intro: 'Here are the tools and services I use to build my apps and power them :)'
 	},
 	avatarAlt: 'Portrait of Ruaridh Bell',
-	heroTagline: 'I build productivity apps',
+	heroTagline: 'I mostly build mobile apps',
 	apps: [
 		{
 			id: 'app1',
