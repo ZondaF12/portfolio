@@ -221,7 +221,7 @@ export const site = {
 				},
 				{
 					name: 'Swift',
-					href: 'https://posthog.com',
+					href: 'https://www.swift.org/',
 					details: [{ type: 'text', text: 'The framework I use for iOS apps' }],
 					iconUrl: swiftIcon
 				},
