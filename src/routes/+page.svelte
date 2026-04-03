@@ -3,7 +3,7 @@
 	import appTwo from '$lib/assets/muscle_memory.png';
 	import appThree from '$lib/assets/my_pocket_garage.png';
 	import avatar from '$lib/assets/avatar.jpg';
-	import studioImg from '$lib/assets/usertesting.jpg';
+	import workImg from '$lib/assets/usertesting.jpg';
 	import IconWithTooltip from '$lib/components/IconWithTooltip.svelte';
 	import { resolveAppPath } from '$lib/resolve-app-path';
 	import { site } from '$lib/site';
@@ -95,12 +95,12 @@
 
 			<span class="mt-8 inline-flex flex-col items-start gap-2 sm:flex-row sm:items-center">
 				<span>
-					{site.studio.lineStudio}
+					{site.work.lineWork}
 					<IconWithTooltip
-						href={site.studio.badge.href}
-						src={studioImg}
-						alt={site.studio.badge.alt}
-						tooltip={site.studio.badge.tooltip}
+						href={site.work.badge.href}
+						src={workImg}
+						alt={site.work.badge.alt}
+						tooltip={site.work.badge.tooltip}
 						imgClass="ml-2 h-10 w-auto max-w-[140px] rounded-lg border border-gray-200 object-contain px-1 py-1 shadow-sm transition-all sm:-rotate-3 sm:hover:rotate-0 hover:shadow-md"
 					/>
 				</span>
@@ -108,12 +108,12 @@
 
 			<span class="inline-flex flex-col items-start gap-2 sm:flex-row sm:items-center">
 				<span>
-					{site.studio.lineHelp.before}<a
-						href={site.studio.lineHelp.linkHref}
+					{site.work.lineHelp.before}<a
+						href={site.work.lineHelp.linkHref}
 						class="link-brand"
 						target="_blank"
-						rel="noopener noreferrer">{site.studio.lineHelp.linkText}</a
-					>{site.studio.lineHelp.after}
+						rel="noopener noreferrer">{site.work.lineHelp.linkText}</a
+					>{site.work.lineHelp.after}
 				</span>
 			</span>
 

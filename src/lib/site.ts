@@ -104,13 +104,13 @@ export const site = {
 			iconUrl: vercelIcon
 		}
 	] satisfies WebsiteShowcase[],
-	studio: {
+	work: {
 		badge: {
-			href: 'https://www.usertesting.com/sites/default/files/usertestingv3/styles/medium/public/2023-07/Resource%20placeholder%20image.jpg.webp?itok=Vu6yhtaF',
+			href: 'https://www.usertesting.com/',
 			tooltip: 'click here to learn more about my company',
 			alt: 'User Testing'
 		},
-		lineStudio: 'I work at a software company called',
+		lineWork: 'I work at a software company called',
 		lineHelp: {
 			before: 'Check out my github for more of my projects ',
 			linkText: 'here',
