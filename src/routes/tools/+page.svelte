@@ -17,7 +17,9 @@
 	<meta name="twitter:description" content={site.toolsPage.intro} />
 </svelte:head>
 
-<div class="ruaridh-tools mt-0 flex w-full flex-col items-center bg-white p-8 pt-10 sm:mt-20">
+<div
+	class="ruaridh-tools mt-0 flex w-full flex-col items-center bg-white p-8 pt-10 sm:min-h-dvh sm:justify-center sm:pt-8"
+>
 	<div class="flex w-full max-w-175 flex-row items-center justify-center gap-20">
 		<div class="flex w-full flex-col items-start gap-6">
 			<a href={resolveAppPath('/')} class="text-back mb-4 text-lg">&larr; Back to home</a>
