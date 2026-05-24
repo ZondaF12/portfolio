@@ -126,7 +126,7 @@ export const site = {
 			tooltip: '@ruaridhbell',
 			alt: 'X',
 			iconUrl:
-				'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/X_logo.jpg/1200px-X_logo.jpg'
+				'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/X_logo.jpg/1280px-X_logo.jpg?_=20230724061250'
 		},
 		{
 			id: 'instagram',
