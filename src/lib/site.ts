@@ -14,7 +14,7 @@ import svelteIcon from '$lib/assets/svelte.webp';
 import sanityIcon from '$lib/assets/sanity.png';
 
 export type AppShowcase = {
-	id: 'app1' | 'app2' | 'app3';
+	id: 'app1' | 'app2' | 'app3' | 'app4';
 	href: string;
 	tooltip: string;
 	alt: string;
@@ -92,6 +92,12 @@ export const site = {
 			href: 'https://apps.apple.com/gb/app/my-pocket-garage/id6447470205',
 			tooltip: 'My Pocket Garage — A garage management app',
 			alt: 'My Pocket Garage'
+		},
+		{
+      id: 'app4',
+      href: 'https://getpica.app',
+      tooltip: 'Pica — A wishlist and gifting app',
+      alt: 'Pica'
 		}
 	] satisfies AppShowcase[],
 	websitesLead: 'But I also build websites',
