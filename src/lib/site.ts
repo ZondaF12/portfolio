@@ -14,7 +14,7 @@ import svelteIcon from '$lib/assets/svelte.webp';
 import sanityIcon from '$lib/assets/sanity.png';
 
 export type AppShowcase = {
-	id: 'app1' | 'app2' | 'app3' | 'app4';
+	id: 'app1' | 'app2' | 'app3' | 'app4' | 'app5';
 	href: string;
 	tooltip: string;
 	alt: string;
@@ -74,18 +74,18 @@ export const site = {
 	},
 	avatarAlt: 'Portrait of Ruaridh Bell',
 	heroTagline: 'I mostly build mobile apps',
-	apps: [
-		{
-			id: 'app1',
-			href: 'https://ruaridhbell.com',
-			tooltip: 'Ping — a notification api app',
-			alt: 'Ping'
+  apps: [
+    {
+        id: 'app1',
+        href: 'https://getracepace.app',
+        tooltip: 'Race Pace — A forumula 1 stats app',
+        alt: 'Race Pace'
 		},
 		{
-			id: 'app2',
-			href: 'https://testflight.apple.com/join/zmXesa5k',
-			tooltip: 'Muscle Memory — A workout tracker app',
-			alt: 'Muscle Memory'
+      id: 'app2',
+      href: 'https://getpica.app',
+      tooltip: 'Pica — A wishlist and gifting app',
+      alt: 'Pica'
 		},
 		{
 			id: 'app3',
@@ -94,11 +94,17 @@ export const site = {
 			alt: 'My Pocket Garage'
 		},
 		{
-      id: 'app4',
-      href: 'https://getpica.app',
-      tooltip: 'Pica — A wishlist and gifting app',
-      alt: 'Pica'
-		}
+			id: 'app4',
+			href: 'https://ruaridhbell.com',
+			tooltip: 'Ping — a notification api app',
+			alt: 'Ping'
+		},
+		{
+			id: 'app5',
+			href: 'https://testflight.apple.com/join/zmXesa5k',
+			tooltip: 'Muscle Memory — A workout tracker app',
+			alt: 'Muscle Memory'
+		},
 	] satisfies AppShowcase[],
 	websitesLead: 'But I also build websites',
 	websites: [

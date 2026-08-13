@@ -1,21 +1,23 @@
 <script lang="ts">
-	import appOne from '$lib/assets/ping.png';
-	import appTwo from '$lib/assets/muscle_memory.png';
+	import appFour from '$lib/assets/ping.png';
+	import appFive from '$lib/assets/muscle_memory.png';
 	import appThree from '$lib/assets/my_pocket_garage.png';
-	import appFour from '$lib/assets/pica.png';
+	import appTwo from '$lib/assets/pica.png';
+	import appOne from '$lib/assets/racepace.png';
 	import avatar from '$lib/assets/avatar.jpg';
 	import workImg from '$lib/assets/usertesting.jpg';
 	import IconWithTooltip from '$lib/components/IconWithTooltip.svelte';
 	import { resolveAppPath } from '$lib/resolve-app-path';
 	import { site } from '$lib/site';
 
-	const appIcons = { app1: appOne, app2: appTwo, app3: appThree, app4: appFour } as const;
+	const appIcons = { app1: appOne, app2: appTwo, app3: appThree, app4: appFour, app5: appFive } as const;
 
 	const appRotations = [
 		'relative z-10 sm:-rotate-6 sm:group-hover/appsrow:rotate-0 sm:group-hover/appsrow:translate-x-0 sm:translate-x-2',
 		'relative z-20 sm:rotate-3 sm:group-hover/appsrow:rotate-0 sm:group-hover/appsrow:translate-x-2',
 		'relative z-30 sm:-rotate-6 sm:group-hover/appsrow:rotate-0 sm:group-hover/appsrow:translate-x-4 sm:-translate-x-4',
-		'relative z-40 sm:rotate-6 sm:group-hover/appsrow:rotate-0 sm:group-hover/appsrow:translate-x-6 sm:-translate-x-8'
+		'relative z-40 sm:rotate-6 sm:group-hover/appsrow:rotate-0 sm:group-hover/appsrow:translate-x-6 sm:-translate-x-8',
+		'relative z-50 sm:-rotate-6 sm:group-hover/appsrow:rotate-0 sm:group-hover/appsrow:translate-x-8 sm:-translate-x-12'
 	];
 
 	const websiteRotations = [
