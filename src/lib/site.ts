@@ -78,7 +78,7 @@ export const site = {
     {
         id: 'app1',
         href: 'https://getracepace.app',
-        tooltip: 'Race Pace — A forumula 1 stats app',
+        tooltip: 'Race Pace — A formula 1 stats app',
         alt: 'Race Pace'
 		},
 		{
