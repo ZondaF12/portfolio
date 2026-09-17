@@ -1,4 +1,4 @@
-import cursorIcon from '$lib/assets/cursor.jpg';
+import zedIcon from '$lib/assets/zed.png';
 import ghosttyIcon from '$lib/assets/ghostty.svg';
 import arcIcon from '$lib/assets/arc.png';
 import wisprFlowIcon from '$lib/assets/wisprflow.png';
@@ -88,10 +88,11 @@ export const site = {
       alt: 'Pica'
 		},
 		{
-			id: 'app3',
-			href: 'https://apps.apple.com/gb/app/my-pocket-garage/id6447470205',
-			tooltip: 'My Pocket Garage — A garage management app',
-			alt: 'My Pocket Garage'
+      id: 'app3',
+      href: 'https://testflight.apple.com/join/zmXesa5k',
+			tooltip: 'Muscle Memory — A workout tracker app',
+			alt: 'Muscle Memory'
+
 		},
 		{
 			id: 'app4',
@@ -101,9 +102,9 @@ export const site = {
 		},
 		{
 			id: 'app5',
-			href: 'https://testflight.apple.com/join/zmXesa5k',
-			tooltip: 'Muscle Memory — A workout tracker app',
-			alt: 'Muscle Memory'
+			href: 'https://apps.apple.com/gb/app/my-pocket-garage/id6447470205',
+			tooltip: 'My Pocket Garage — A garage management app',
+			alt: 'My Pocket Garage'
 		},
 	] satisfies AppShowcase[],
 	websitesLead: 'But I also build websites',
@@ -178,10 +179,10 @@ export const site = {
 			sectionTitle: 'Things that power my life',
 			items: [
 				{
-					name: 'Cursor',
-					href: 'https://cursor.com',
+					name: 'Zed',
+					href: 'https://zed.dev',
 					details: [{ type: 'text', text: 'What I use for code editing.' }],
-					iconUrl: cursorIcon
+					iconUrl: zedIcon
 				},
 				{
 					name: 'Ghostty',

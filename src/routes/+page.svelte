@@ -1,7 +1,7 @@
 <script lang="ts">
 	import appFour from '$lib/assets/ping.png';
-	import appFive from '$lib/assets/muscle_memory.png';
-	import appThree from '$lib/assets/my_pocket_garage.png';
+	import appThree from '$lib/assets/muscle_memory.png';
+	import appFive from '$lib/assets/my_pocket_garage.png';
 	import appTwo from '$lib/assets/pica.png';
 	import appOne from '$lib/assets/racepace.png';
 	import avatar from '$lib/assets/avatar.jpg';
