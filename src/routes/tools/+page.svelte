@@ -1,5 +1,5 @@
 <script lang="ts">
-	import avatar from '$lib/assets/avatar.jpg';
+	import avatar from '$lib/assets/avatar.jpeg';
 	import ToolRow from '$lib/components/ToolRow.svelte';
 	import { resolveAppPath } from '$lib/resolve-app-path';
 	import { site } from '$lib/site';
