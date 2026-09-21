@@ -1,6 +1,6 @@
 <script lang="ts">
 	import './layout.css';
-	import avatar from '$lib/assets/avatar.jpg';
+	import avatar from '$lib/assets/avatar.jpeg';
 	import { site } from '$lib/site';
 
 	let { children } = $props();

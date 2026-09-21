@@ -4,7 +4,7 @@
 	import appFive from '$lib/assets/my_pocket_garage.png';
 	import appTwo from '$lib/assets/pica.png';
 	import appOne from '$lib/assets/racepace.png';
-	import avatar from '$lib/assets/avatar.jpg';
+	import avatar from '$lib/assets/avatar.jpeg';
 	import workImg from '$lib/assets/usertesting.jpg';
 	import IconWithTooltip from '$lib/components/IconWithTooltip.svelte';
 	import { resolveAppPath } from '$lib/resolve-app-path';
