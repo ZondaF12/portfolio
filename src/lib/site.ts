@@ -1,6 +1,7 @@
 import zedIcon from '$lib/assets/zed.png';
 import ghosttyIcon from '$lib/assets/ghostty.svg';
 import arcIcon from '$lib/assets/arc.png';
+import claudeIcon from '$lib/assets/claude.png';
 import wisprFlowIcon from '$lib/assets/wisprflow.png';
 import vercelIcon from '$lib/assets/vercel.png';
 import supabaseIcon from '$lib/assets/supabase.jpg';
@@ -195,6 +196,12 @@ export const site = {
 					href: 'https://arc.net',
 					details: [{ type: 'text', text: 'The browser i use for all my browsing.' }],
 					iconUrl: arcIcon
+				},
+				{
+					name: 'Claude Code',
+					href: 'https://claude.ai',
+					details: [{ type: 'text', text: 'My preferred AI coding agent.' }],
+					iconUrl: claudeIcon
 				},
 				{
 					name: 'Wispr Flow	',
