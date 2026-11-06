@@ -4,6 +4,7 @@ import arcIcon from '$lib/assets/arc.png';
 import claudeIcon from '$lib/assets/claude.png';
 import wisprFlowIcon from '$lib/assets/wisprflow.png';
 import vercelIcon from '$lib/assets/vercel.png';
+import hiintIcon from '$lib/assets/hiint.png';
 import supabaseIcon from '$lib/assets/supabase.jpg';
 import firebaseIcon from '$lib/assets/firebase.png';
 import posthogIcon from '$lib/assets/posthog.jpg';
@@ -112,6 +113,13 @@ export const site = {
 	websites: [
 		{
 			id: 'website1',
+			href: 'https://hiint.app',
+			tooltip: 'hiint — Customer feedback for app makers',
+			alt: 'hiint',
+			iconUrl: hiintIcon
+		},
+		{
+			id: 'website2',
 			href: 'https://deborahbellinteriors.com',
 			tooltip: 'Deborah Bell Interiors — A interior design website',
 			alt: 'Deborah Bell Interiors',
